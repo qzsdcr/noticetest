@@ -26,7 +26,7 @@ public class NoticeRegProcController implements NController {
 		dao.insert(no);
 
 
-		response.sendRedirect("notice.jsp");
+		response.sendRedirect("notice.do");
 		
 		
 	}

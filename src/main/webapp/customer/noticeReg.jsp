@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h3>글쓰기</h3>
-	<form action="noticeRegPro.jsp" method="post">
+	<form action="noticeRegPro.do" method="post">
 	<dl>
 		<dt>제목</dt>
 		<td>
@@ -26,7 +26,7 @@
 	</div>
 	<input type="submit" value="save" />
 	<input type="button" value="cancel" class="cancel"/>
-	<a href="notice.jsp"><input type="button" value="menu" class="menu" /></a>
+	<a href="notice.do"><input type="button" value="menu" class="menu" /></a>
 	
 	</form>
 </body>

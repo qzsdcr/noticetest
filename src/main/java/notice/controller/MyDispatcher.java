@@ -51,7 +51,7 @@ public class MyDispatcher extends HttpServlet {
 			}else if(com.equals("/customer/noticeReg.do")) {
 			
 						ncontroller=new NoticeRegController();
-			}else if(com.equals("/customer/noticeRegProc.do")) {
+			}else if(com.equals("/customer/noticeRegPro.do")) {
 				
 						ncontroller=new NoticeRegProcController();
 			}else if(com.equals("/customer/notice.do")) {
