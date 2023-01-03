@@ -67,17 +67,18 @@ public class NoticeDao {
 	
 	
 	
-	public int delete(String num)throws Exception{
+	public Notice delete(String num)throws Exception{
 		 
 			Connection conn=DBCon.getConnection();
 			
 			String sql="delete from notices where seq=?";
 			PreparedStatement pstmt=conn.prepareStatement(sql);
 
+			Notice n=new Notice();
 			pstmt.setString(1, num);
 
 			int cnt=pstmt.executeUpdate();
-			return cnt;
+			return n;
 		
 		
 		

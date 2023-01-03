@@ -11,7 +11,7 @@ public class NoticeEditController implements NController {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		
-		System.out.println("NoticeEditController 도착");
+	System.out.println("NoticeEditController 도착");
 		
 		String num=request.getParameter("c");
 	    if(num==null){
@@ -27,3 +27,4 @@ public class NoticeEditController implements NController {
 	}
 
 }
+

@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import notice.controller.customer.NoticeController;
+import notice.controller.customer.NoticeDelProcController;
 import notice.controller.customer.NoticeDetailController;
 import notice.controller.customer.NoticeEditController;
 import notice.controller.customer.NoticeEditProcController;
@@ -56,6 +57,9 @@ public class MyDispatcher extends HttpServlet {
 			}else if(com.equals("/customer/notice.do")) {
 			
 						ncontroller=new NoticeController();
+			}else if(com.equals("/customer/noticeDelProc.do")) {
+				
+				ncontroller=new NoticeDelProcController();
 			}
 			ncontroller.execute(request, response);
 			
